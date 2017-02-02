@@ -1,0 +1,22 @@
+ul {
+  list-style: none;
+}
+#add-form {
+  width: 40%;
+  margin: auto;
+}
+#add-form button {
+  margin: auto;
+}
+#update-form {
+  width: 40%;
+  margin: auto;
+}
+#update-form button {
+  margin: auto;
+}
+@media (max-width: 600px) {
+  #add-form, #add-form button, #update-form, #update-form button {
+    width: 80%;
+  }
+}

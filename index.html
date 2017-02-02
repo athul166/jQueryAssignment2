@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Movie List</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+			<div class="container main">
+
+						<nav class="navbar navbar-inverse navbar-light">
+							<h1 class="navbar-brand">MOVIE LIST</h1>
+						</nav>
+						<div id="add-form">
+									<form>
+												<div class="form-group">
+													<label>Enter Title</label>
+													<input type="text" class="form-control" id="new-movie">
+												</div>
+												<div class="form-group">
+													<label>Enter IMDB-ID</label>
+													<input type="text" class="form-control" id="new-imdb">
+												</div>
+												<div class="form-group">
+													<label>Enter Year</label>
+													<input type="text" class="form-control" id="new-year">
+												</div>
+												<div class="form-group">
+													<button type="button" class="btn btn-success center-block add_new">Add Movie</button>
+												</div>
+									</form>
+						</div>
+						<!-- <div id="wrap"><img src="trip.jpg"></div> -->
+						<div id="update-form">
+									<form>
+												<div class="form-group">
+													<label>Enter Title</label>
+													<input type="text" class="form-control" id="up-movie">
+												</div>
+												<div class="form-group">
+													<label>IMDB-ID</label>
+													<input type="text" class="form-control" id="up-imdb">
+												</div>
+												<div class="form-group">
+													<label>Enter Year</label>
+													<input type="text" class="form-control" id="up-year">
+												</div>
+												<div class="form-group">
+													<button type="button" class="btn btn-success center-block up_new">Update Movie</button>
+												</div>
+									</form>
+						</div>
+						<table class="table table-responsive table-striped" id="spreadsheet">
+								  <thead>
+										<tr>
+								      <th>Movie Name</th>
+								      <th>IMDB ID</th>
+								      <th>Year</th>
+											<th>Update</th>
+											<th>Delete</th>
+								    </tr>
+								  </thead>
+								  <tbody id="movie-list">
+								  </tbody>
+						</table>
+						<!-- <button type="button" id="prev">Prev</button>
+						<button type="button" id="next">Next</button> -->
+			</div>
+
+<script src="js/jquery-3.1.1.js"></script>
+<script src="js/main2.js"></script>
+</body>
+</html>
